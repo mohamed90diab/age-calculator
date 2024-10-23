@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة ويب مستقلة</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-    </style>
+    <title>حاسبة العمر</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>مرحبًا بكم في موقعي</h1>
-    <p>هذه صفحة ويب مستقلة تم إنشاؤها باستخدام Termux.</p>
+    <div class="container">
+        <h1>حاسبة العمر</h1>
+        <p>أدخل تاريخ ميلادك:</p>
+        <input type="date" id="birthdate">
+        <button onclick="calculateAge()">احسب عمرك</button>
+
+        <div id="results">
+            <p id="ageDays">العمر بالأيام: </p>
+            <p id="ageWeeks">العمر بالأسابيع: </p>
+            <p id="ageMonths">العمر بالشهور: </p>
+            <p id="ageYears">العمر بالسنوات: </p>
+            <p id="ageHours">العمر بالساعات: </p>
+            <p id="ageMinutes">العمر بالدقائق: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
